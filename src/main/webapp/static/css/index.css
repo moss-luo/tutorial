@@ -1,0 +1,23 @@
+body {
+    position: relative;
+}
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+input a{outline:none;}
+
+.jumbotron{
+    background: url("../../static/images/search-bg.jpg") repeat scroll center center transparent;
+    margin-top:40px;
+    height:200px;
+    text-align: center;
+}
+
+.search-div{
+	margin-top:85px;
+}
