@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.moss.tutorial.cache.CacheManager;
+import com.moss.tutorial.vo.User;
 
 @Controller
 @RequestMapping("order")
@@ -17,15 +18,15 @@ public class OrderController {
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<String> orderList() {
 		String cacheName = "icache-global";
-		String key = "key";
-		String value = "oschina";
-		String gValue = (String) CacheManager.get(cacheName, key);// A
+		String key = "user";
+		User u = new User("moss", "123456");
+		User gValue = (User) CacheManager.get(cacheName, key);// A
 		if (gValue != null) {
-			log.info("获取缓存成功：" + gValue);
+			log.info("获取缓存成功：" + gValue.getName());
 		} else {
 			log.info("获取缓存为空，设置缓存");
-			CacheManager.set(cacheName, key, value);
-			log.info("设置缓存之后获取缓存：" + (String) CacheManager.get(cacheName, key));
+			CacheManager.set(cacheName, key, u);
+			log.info("设置缓存之后获取缓存：" + (User) CacheManager.get(cacheName, key));
 		}
 		return new ResponseEntity<String>(HttpStatus.OK);
 	}

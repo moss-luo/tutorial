@@ -1,0 +1,14 @@
+#scrollUp {
+	bottom: 20px;
+	right: 20px;
+	height: 38px;
+	width: 38px;
+	background: url("../../resources/images/top.png") no-repeat;
+}
+
+.bottom {
+	background-color: #EAEDF0;
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+}

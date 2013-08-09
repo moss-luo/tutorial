@@ -1,32 +1,35 @@
 body {
     position: relative;
 }
+.container{
+	width:1000px;
+}
 body {
     background-color: #FFFFFF;
     color: #333333;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 微软雅黑,Tahoma,Verdana;
     font-size: 14px;
     line-height: 20px;
     margin: 0;
 }
-input a{
-	outline:none;
-}
+input[type=button]:focus,input[type=submit]:focus{outline:none;}
+input[type=button]::-moz-focus-inner{outline:0;}
+
+a{outline:none;}
 h3,h4{
 	color:#33B5E5;
 }
 .jumbotron{
-    background: url("../../resources/images/searchbg.png") repeat scroll center center transparent;
     margin-top:40px;
-    height:200px;
+    height:170px;
     text-align: center;
 }
 
 .search-div{
-	margin-top:85px;
+	margin-top:15px;
 }
 .search-div+p a{
-	color:#FFFFFF;
+	color:gray;
 }
 .center-content i{
 	color:#FF9933;
@@ -66,41 +69,4 @@ h3,h4{
 .phone-widget p{
 	margin-left:40px;
 	margin-top:10px;
-}
-.bottom{
-	margin-top:25px;
-	background-color: #2C3B4B;
-	color:#FFFFFF;
-}
-.bottom .mix{
-	margin-top:20px;
-	text-align: center;
-}
-.bottom .link a{
-	line-height: 20px;
-}
-.bottom .about a{
-	margin-right:20px;
-	font-size: 14px;
-	font-family: inherit;
-    font-weight: bold;
-    line-height: 20px;
-    text-rendering: optimizelegibility;
-}
-.bottom .about img{
-	margin-left:18px;
-}
-
-.copyright{
-	background-color: #232F3C;
-	color:#536A85;
-	text-align: center;
-	padding:10px 0px 10px 0px;
-}
-#scrollUp {
-	bottom: 20px;
-	right: 20px;
-	height: 38px;
-	width: 38px;
-	background: url("../../resources/images/top.png") no-repeat;
 }

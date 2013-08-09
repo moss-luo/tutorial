@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+.container{
+	width:1000px;
+}
+.bottom{
+	background-color: #EAEDF0;
+	color:#FFFFFF;
+	margin-top:20px;
+}
+.bottom .mix{
+	margin-top:20px;
+	text-align: center;
+	background-color: #5698FA;
+}
+.bottom .link a{
+	line-height: 20px;
+	color:gray;
+}
+.bottom .about a{
+	margin-right:20px;
+	font-size: 14px;
+	font-family: inherit;
+    font-weight: bold;
+    line-height: 20px;
+    text-rendering: optimizelegibility;
+    color:gray;
+}
+.link h5{
+	color:gray;
+	margin-top:0px;
+}
+.bottom .about img{
+	margin-left:18px;
+}
+.copyright {
+	background-color: #EAEDF0;
+	color: #536A85;
+	text-align: center;
+}
+.margin10{
+	margin:20px 0px 10px 0px;
+}
