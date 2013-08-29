@@ -19,30 +19,9 @@
 
 	<body>
 		<!-- header page begin -->
-		<div class="container">
-			<div class="masthead">
-				<h3 class="muted"><a href="index.html"><img src="resources/images/home_logo.png"/></a></h3>
-				<div class="navbar">
-					<div class="navbar-inner">
-						<div class="container">
-							<ul class="nav">
-								<li class="active"><a href="#">首页</a></li>
-								<li><a href="#">IC供应</a></li>
-								<li><a href="#">IC求购</a></li>
-								<li><a href="#">方案供应</a></li>
-								<li><a href="#">方案求购</a></li>
-								<li style="width:300px;">
-									<form class="navbar-search form-search pull-left">
-	                    				<input type="text" class="search-query">
-	                    				<div class="i-search-div"><i class="icon-search icon-large"></i></div>
-		                    		</form>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- /.navbar -->
-			</div>
+		<div class="container-fluid">
+			<iframe id="header" src="include/header.html" frameborder="0" scrolling="no"
+			 	width="100%" height="120px" type="0" ></iframe>
 		</div>
 		<!-- header page end -->
 		
@@ -50,7 +29,28 @@
 			<div class="row-fluid">
 				<!--左侧内容区begin  -->
 				<div class="span3">
-					<div class="border-widget ">IC分类</div>
+					<div class="category-widget ic-category">
+						<div class="dropdown">
+							<font id="dropCategory" class="dropdown-toggle" data-toggle="dropdown">
+								全部IC分类<i class="icon-chevron-down" style="margin-left:10px"></i>
+							</font>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropCategory">
+								<li><a tabindex="-1" href="javascript:void(0);">Action</a></li>
+								<li><a tabindex="-1" href="#">Another action</a></li>
+								<li><a tabindex="-1" href="#">Something else here</a></li>
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">More options</a>
+									<ul class="dropdown-menu">
+									    <li><a tabindex="-1" href="#">Second level link</a></li>
+									    <li><a tabindex="-1" href="#">Second level link</a></li>
+									    <li><a tabindex="-1" href="#">Second level link</a></li>
+									    <li><a tabindex="-1" href="#">Second level link</a></li>
+									    <li><a tabindex="-1" href="#">Second level link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<!-- 交易排行begin -->
 					<div class="panel">
 						<div class="panel-heading">
@@ -353,42 +353,42 @@
 								    <div class="tab-pane" id="tab4">
 								    	<table class="table table-hover" cellspacing="0" cellpadding="0" rules="none">
 								   			<tr>
-								   				<td>太阳能显示器</td>
+								   				<td><a href="#">太阳能显示器</a></td>
 								   				<td>求购适用于超市风幕柜温度显示太阳能显示器方案</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
-								   				<td>太阳能显示器</td>
+								   				<td><a href="#">太阳能显示器</a></td>
 								   				<td>求购适用于超市风幕柜温度显示太阳能显示器方案</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
-								   				<td>太阳能显示器</td>
+								   				<td><a href="#">太阳能显示器</a></td>
 								   				<td>求购适用于超市风幕柜温度显示太阳能显示器方案</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
-								   				<td>太阳能显示器</td>
+								   				<td><a href="#">太阳能显示器</a></td>
 								   				<td>求购适用于超市风幕柜温度显示太阳能显示器方案</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
-								   				<td>太阳能显示器</td>
+								   				<td><a href="#">太阳能显示器</a></td>
 								   				<td>求购适用于超市风幕柜温度显示太阳能显示器方案</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
-								   				<td>太阳能显示器</td>
+								   				<td><a href="#">太阳能显示器</a></td>
 								   				<td>求购适用于超市风幕柜温度显示太阳能显示器方案</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
-								   				<td>太阳能显示器</td>
+								   				<td><a href="#">太阳能显示器</a></td>
 								   				<td>求购适用于超市风幕柜温度显示太阳能显示器方案</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
-								   				<td>太阳能显示器</td>
+								   				<td><a href="#">太阳能显示器</a></td>
 								   				<td>求购适用于超市风幕柜温度显示太阳能显示器方案</td>
 								   				<td>10分钟前</td>
 								   			</tr>
@@ -423,51 +423,61 @@
 								    <div class="tab-pane active " id="icSupplySearch">
 								   		<table class="table table-hover" cellspacing="0" cellpadding="0" rules="none">
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_1.png"></a></td>
 								   				<td>DFARSASDG-928</td>
 								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_2.png"></a></td>
 								   				<td>DFARSASDG-928</td>
 								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_3.png"></a></td>
 								   				<td>DFARSASDG-928</td>
 								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_4.png"></a></td>
 								   				<td>DFARSASDG-928</td>
 								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_5.png"></a></td>
 								   				<td>DFARSASDG-928</td>
 								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_6.png"></a></td>
 								   				<td>DFARSASDG-928</td>
 								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_7.png"></a></td>
 								   				<td>DFARSASDG-928</td>
 								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
-								   				<td>DFARSASDG-928</td>
-								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
-								   				<td>10分钟前</td>
-								   			</tr>
-								   				<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_8.png"></a></td>
 								   				<td>DFARSASDG-928</td>
 								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_9.png"></a></td>
+								   				<td>DFARSASDG-928</td>
+								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
+								   				<td>10分钟前</td>
+								   			</tr>
+								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_10.png"></a></td>
 								   				<td>DFARSASDG-928</td>
 								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
@@ -477,53 +487,63 @@
 								    <div class="tab-pane" id="icSeekSearch">
 								    	<table class="table table-hover" cellspacing="0" cellpadding="0" rules="none">
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_1.png"></a></td>
 								   				<td>DFARSASDG-928</td>
-								   				<td>求购DFARSASDG-928原装正品现货价格最低,深圳交易</td>
+								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_2.png"></a></td>
 								   				<td>DFARSASDG-928</td>
-								   				<td>求购DFARSASDG-928原装正品现货价格最低,深圳交易</td>
+								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_3.png"></a></td>
 								   				<td>DFARSASDG-928</td>
-								   				<td>求购DFARSASDG-928原装正品现货价格最低,深圳交易</td>
+								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_4.png"></a></td>
 								   				<td>DFARSASDG-928</td>
-								   				<td>求购DFARSASDG-928原装正品现货价格最低,深圳交易</td>
+								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_5.png"></a></td>
 								   				<td>DFARSASDG-928</td>
-								   				<td>求购DFARSASDG-928原装正品现货价格最低,深圳交易</td>
+								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_6.png"></a></td>
 								   				<td>DFARSASDG-928</td>
-								   				<td>求购DFARSASDG-928原装正品现货价格最低,深圳交易</td>
+								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_7.png"></a></td>
 								   				<td>DFARSASDG-928</td>
-								   				<td>求购DFARSASDG-928原装正品现货价格最低,深圳交易</td>
+								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_8.png"></a></td>
 								   				<td>DFARSASDG-928</td>
-								   				<td>求购DFARSASDG-928原装正品现货价格最低,深圳交易</td>
+								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_9.png"></a></td>
 								   				<td>DFARSASDG-928</td>
-								   				<td>求购DFARSASDG-928原装正品现货价格最低,深圳交易</td>
+								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   			<tr>
+								   				<td><a href="#"><img src="resources/images/number/n_10.png"></a></td>
 								   				<td>DFARSASDG-928</td>
-								   				<td>求购DFARSASDG-928原装正品现货价格最低,深圳交易</td>
+								   				<td>供应DFARSASDG-928原装正品现货价格最低,量大价优</td>
 								   				<td>10分钟前</td>
 								   			</tr>
 								   		</table>
@@ -649,7 +669,7 @@
 			</div>
 		</div>
 		<!-- 底部 -->
-		<div class="container-fluid bottom">
+		<div class="container-fluid">
 			<iframe id="include_bottom" src="include/bottom.html" frameborder="0" scrolling="no"
 			 	width="100%" height="395px" type="0" ></iframe>
 		</div>
@@ -661,5 +681,6 @@
 		<script type="text/javascript" src="resources/jquery/slide/js/home.slide.js"></script>
 		<script type="text/javascript" src="resources/jquery/jquery.scrollUp.min.js"></script>
 		<script type="text/javascript" src="resources/js/scrollUp.js"></script>
+		<script type="text/javascript" src="resources/js/home.js"></script>
 	</body>
 </html>
