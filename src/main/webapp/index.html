@@ -3,10 +3,9 @@
 	<head>
 		<link type="image/ico" href="resources/images/favicon.ico" rel="shortcut icon">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link rel="stylesheet" href="resources/bootstrap/2.3.2/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="resources/bootstrap/2.3.2/css/bootstrap.css"/>
 		<link rel="stylesheet" href="resources/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="resources/css/index.css" />
-		<link rel="stylesheet" href="resources/css/theme.css" />
 		<!--[if IE 7]>
 			<link rel="stylesheet" href="resources/css/font-awesome-ie7.min.css">
 		<![endif]-->
@@ -17,16 +16,30 @@
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="brand" href="#"><img src="resources/images/logo.png"/></a>
+					<a class="brand" href="#"><img src="resources/images/logo_min.png"/></a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
-							<li ><a href="#"><img src="resources/images/android.png"/> android客户端</a></li>
-							<li ><a href="#"><img src="resources/images/ios.png"/> iphone客户端</a></li>
+							<li ><a href="/include/app.html"  target="_blank"><img src="resources/images/android.png"/> android客户端</a></li>
+							<li ><a href="/include/app.html"  target="_blank"><img src="resources/images/ios.png"/> iphone客户端</a></li>
 						</ul>
 						
 						<div class="pull-right">
-							<a class="btn btn-primary" href="#">登录</a>
-							<a class="btn" style="margin-left:10px" href="#">注册</a>
+							<div class="login-div" >
+								<a class="btn btn-primary" href="/login">登录</a>
+								<a class="btn" style="margin-left:10px" href="/register">注册</a>
+							</div>
+							<div class="dropdown login-success" style="display:none">
+		                		<a class="btn btn-success" class="dropdown-toggle" data-toggle="dropdown" href="#">
+									我的IC银行
+									<b class="caret"></b>
+								</a>
+				                <ul class="dropdown-menu" style="min-width:105px;">
+			                    	<li><a href="/personal/user/isPersonal">个人中心</a></li>
+			                  		<li><a href="/personal/colletion">我的收藏</a></li>
+			                  		<li><a href="/personal/subscribe/seller">我的订阅</a></li>
+			                  		<li><a href="#" class="logout">退出</a></li>
+				                </ul>
+			              	</div>
 						</div>
 					</div>
 				</div>
