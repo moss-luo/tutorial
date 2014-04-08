@@ -41,7 +41,6 @@ public class CacheManager {
 	 * @return
 	 */
 	public final static Object get(String name, Serializable key){
-		//System.out.println("GET1 => " + name+":"+key);
 		if(name!=null && key != null)
 			return _GetCache(name, true).get(key);
 		return null;
@@ -57,7 +56,6 @@ public class CacheManager {
 	 */
 	@SuppressWarnings("unchecked")
 	public final static <T> T get(Class<T> resultClass, String name, Serializable key){
-		//System.out.println("GET2 => " + name+":"+key);
 		if(name!=null && key != null)
 			return (T)_GetCache(name, true).get(key);
 		return null;
