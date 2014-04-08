@@ -243,7 +243,6 @@
 			<version>${spring.version}</version>
 			<scope>test</scope>
 		</dependency>
-
 		<!-- h2 -->
 		<dependency>
 			<groupId>com.h2database</groupId>
